@@ -149,6 +149,7 @@
             BtnLogin.TabIndex = 7;
             BtnLogin.Text = "Login";
             BtnLogin.UseVisualStyleBackColor = false;
+            BtnLogin.Click += BtnLogin_Click;
             // 
             // PtbLogo
             // 
