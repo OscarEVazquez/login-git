@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             PnlBarraAccion = new Panel();
+            PtbMinimizarVentana = new PictureBox();
+            PtbCerrarVentana = new PictureBox();
             TxtUsuario = new TextBox();
             LblUsuario = new Label();
             LblContraseña = new Label();
@@ -37,12 +39,10 @@
             ChbRecordarUsuario = new CheckBox();
             BtnLogin = new Button();
             PtbLogo = new PictureBox();
-            PtbCerrarVentana = new PictureBox();
-            PtbMinimizarVentana = new PictureBox();
             PnlBarraAccion.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)PtbLogo).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)PtbCerrarVentana).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PtbMinimizarVentana).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PtbCerrarVentana).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PtbLogo).BeginInit();
             SuspendLayout();
             // 
             // PnlBarraAccion
@@ -55,6 +55,27 @@
             PnlBarraAccion.Name = "PnlBarraAccion";
             PnlBarraAccion.Size = new Size(303, 34);
             PnlBarraAccion.TabIndex = 0;
+            PnlBarraAccion.MouseMove += PnlBarraAccion_MouseMove;
+            // 
+            // PtbMinimizarVentana
+            // 
+            PtbMinimizarVentana.Image = Properties.Resources.minimize_118918;
+            PtbMinimizarVentana.Location = new Point(220, 10);
+            PtbMinimizarVentana.Name = "PtbMinimizarVentana";
+            PtbMinimizarVentana.Size = new Size(26, 17);
+            PtbMinimizarVentana.SizeMode = PictureBoxSizeMode.Zoom;
+            PtbMinimizarVentana.TabIndex = 10;
+            PtbMinimizarVentana.TabStop = false;
+            // 
+            // PtbCerrarVentana
+            // 
+            PtbCerrarVentana.Image = Properties.Resources.cross_icon_icons_com_48317;
+            PtbCerrarVentana.Location = new Point(260, 10);
+            PtbCerrarVentana.Name = "PtbCerrarVentana";
+            PtbCerrarVentana.Size = new Size(26, 17);
+            PtbCerrarVentana.SizeMode = PictureBoxSizeMode.Zoom;
+            PtbCerrarVentana.TabIndex = 9;
+            PtbCerrarVentana.TabStop = false;
             // 
             // TxtUsuario
             // 
@@ -137,26 +158,6 @@
             PtbLogo.TabIndex = 8;
             PtbLogo.TabStop = false;
             // 
-            // PtbCerrarVentana
-            // 
-            PtbCerrarVentana.Image = Properties.Resources.cross_icon_icons_com_48317;
-            PtbCerrarVentana.Location = new Point(260, 10);
-            PtbCerrarVentana.Name = "PtbCerrarVentana";
-            PtbCerrarVentana.Size = new Size(26, 17);
-            PtbCerrarVentana.SizeMode = PictureBoxSizeMode.Zoom;
-            PtbCerrarVentana.TabIndex = 9;
-            PtbCerrarVentana.TabStop = false;
-            // 
-            // PtbMinimizarVentana
-            // 
-            PtbMinimizarVentana.Image = Properties.Resources.minimize_118918;
-            PtbMinimizarVentana.Location = new Point(220, 10);
-            PtbMinimizarVentana.Name = "PtbMinimizarVentana";
-            PtbMinimizarVentana.Size = new Size(26, 17);
-            PtbMinimizarVentana.SizeMode = PictureBoxSizeMode.Zoom;
-            PtbMinimizarVentana.TabIndex = 10;
-            PtbMinimizarVentana.TabStop = false;
-            // 
             // FrmLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -178,9 +179,9 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
             PnlBarraAccion.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)PtbLogo).EndInit();
-            ((System.ComponentModel.ISupportInitialize)PtbCerrarVentana).EndInit();
             ((System.ComponentModel.ISupportInitialize)PtbMinimizarVentana).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PtbCerrarVentana).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PtbLogo).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
