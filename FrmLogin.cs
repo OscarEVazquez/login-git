@@ -1,3 +1,5 @@
+using System.Windows.Forms.Design;
+
 namespace login_git
 {
     public partial class FrmLogin : Form
@@ -17,14 +19,24 @@ namespace login_git
                 PosY = e.Y;
 
             }
-            else 
+            else
             {
-                Top +=  (e.Y -PosY);
-                Left +=  (e.X-PosX);
+                Top += (e.Y - PosY);
+                Left += (e.X - PosX);
 
             }
 
 
+        }
+
+        private void PtbCerrarVentana_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void PtbMinimizarVentana_Click(object sender, EventArgs e)
+        {
+            this.WindowState= FormWindowState.Minimized;
         }
     }
 }

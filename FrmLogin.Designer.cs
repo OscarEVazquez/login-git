@@ -66,6 +66,7 @@
             PtbMinimizarVentana.SizeMode = PictureBoxSizeMode.Zoom;
             PtbMinimizarVentana.TabIndex = 10;
             PtbMinimizarVentana.TabStop = false;
+            PtbMinimizarVentana.Click += PtbMinimizarVentana_Click;
             // 
             // PtbCerrarVentana
             // 
@@ -76,6 +77,7 @@
             PtbCerrarVentana.SizeMode = PictureBoxSizeMode.Zoom;
             PtbCerrarVentana.TabIndex = 9;
             PtbCerrarVentana.TabStop = false;
+            PtbCerrarVentana.Click += PtbCerrarVentana_Click;
             // 
             // TxtUsuario
             // 
